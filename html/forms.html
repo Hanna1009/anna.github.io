@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Документ без названия</title>
+<link href="forms_css.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper" >
+	<form action="?" method='GET'>
+	<fieldset>
+	<legend>Ввод личных данных</legend>
+	<p class="question"><label for="name">Введите ваше имя (макс. 10 символов):</label></p>
+	<p><input class="input" type="text" name="name" id="name" size="30" maxlength="10"></p>
+	<p class="question"><label for="password">Введите вашу фамилию (макс. 10 символов):</label></p>
+	<p><input class="input" type="password" name="password" id="password" size="30" maxlength="10"></p>
+	</fieldset>
+		<fieldset>
+	<legend>Вопросы</legend>
+		<p class="question">Любите ли Вы экономить время?</p>
+		<p><label>Да<input type="radio" name="time" value="yes" checked></label><label>Нет	<input type="radio" name="time" value="no" checked></label></p>
+		<p class="question">Какими инструментами <для> "экономии" времени Вы пользуетесь?</p>
+		<p><input type="checkbox" name="ez" disabled="disabled">Ежедневник</label>
+		<p><input type="checkbox" name="hr" checked="checked">Хронометраж</label>
+		<p><input type="checkbox" name="sv">Свои наработки</label>
+		
+		
+		<p class="question"><label>Сколько часов в день Вы спите?</label></p>
+		<p>
+		<select name="sleep" id="sleep">
+		<option>5</option>
+		<option>6</option>
+		<option>7</option>
+		<option selected>8</option>
+		<option>8+</option>
+		</select>
+		</p>
+	</fieldset>
+	
+	<p class="question tp"><label for="text">Поделитесь своими наработками в экономии времени:</label></p>
+	<p><textarea name="text" cols="50" rows="6" id="text">Тестовый текст...</textarea></p>
+	<p><input type="image" src="blueButton.jpg" name="imageButton"></p>
+	
+	</form>
+</div>
+</body>
+</html>
